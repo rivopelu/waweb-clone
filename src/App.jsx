@@ -6,11 +6,11 @@ const App = () => {
     return (
 
 
-        <div className='flex min-h-screen w-full max-w-[1280px]  bg-white fixed'>
-            <div className="kiri  w-[40%]  relative">
+        <div className='flex min-h-screen w-full   bg-white fixed'>
+            <div className="kiri  w-[30%]  relative">
                 <SideBarComp />
             </div>
-            <div className="kama">
+            <div className="flex-1 w-full ">
 
                 <MainChat />
             </div>

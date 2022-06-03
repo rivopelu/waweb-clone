@@ -23,6 +23,8 @@ import profile21 from './profilPicture/21.png'
 import profile22 from './profilPicture/22.png'
 
 
+export { profile21 }
+
 
 export const profileData = [
 
@@ -57,6 +59,68 @@ export const profileData = [
         status: 'lorem ipsum dolor sit',
         avatar: profile4,
         notif: 10,
+        active: false
+    },
+
+]
+
+export const AllChat = [
+
+
+    {
+        id: 12323445, name: "Jhon Doe Maxim",
+        chatTerbaru: 'lorem ipsum semakin menjadi dan semakain semakin lagi kami menjadi yang terbaik bagi diri ini dan semuanya',
+        status: 'lorem ipsum dolor sit',
+        avatar: profile1,
+        notif: 3,
+        active: true
+    },
+    {
+        id: 12321614, name: "Nia tumbelaka",
+        chatTerbaru: 'lorem ipsum semakin menjadi dan semakain semakin lagi kami menjadi yang terbaik bagi diri ini dan semuanya',
+        status: 'lorem ipsum dolor sit',
+        avatar: profile2,
+        notif: 45,
+        active: true
+    },
+    {
+        id: 54621264, name: "Rivo Pelu",
+        chatTerbaru: 'lorem ipsum semakin menjadi dan semakain semakin lagi kami menjadi yang terbaik bagi diri ini dan semuanya',
+        status: 'lorem ipsum dolor sit',
+        avatar: profile3,
+
+        active: false
+    },
+    {
+        id: 546570120, name: "Example Name",
+        chatTerbaru: 'lorem ipsum semakin menjadi dan semakain semakin lagi kami menjadi yang terbaik bagi diri ini dan semuanya',
+        status: 'lorem ipsum dolor sit',
+        avatar: profile4,
+        notif: 10,
+        active: false
+    },
+    {
+        id: 546570121540, name: "Example Name",
+        chatTerbaru: 'lorem ipsum semakin menjadi dan semakain semakin lagi kami menjadi yang terbaik bagi diri ini dan semuanya',
+        status: 'lorem ipsum dolor sit',
+        avatar: profile5,
+
+        active: false
+    },
+    {
+        id: 15123101545, name: "Example Name",
+        chatTerbaru: 'lorem ipsum semakin menjadi dan semakain semakin lagi kami menjadi yang terbaik bagi diri ini dan semuanya',
+        status: 'lorem ipsum dolor sit',
+        avatar: profile6,
+
+        active: false
+    },
+    {
+        id: 15123101545, name: "Example Name",
+        chatTerbaru: 'lorem ipsum semakin menjadi dan semakain semakin lagi kami menjadi yang terbaik bagi diri ini dan semuanya',
+        status: 'lorem ipsum dolor sit',
+        avatar: profile7,
+
         active: false
     },
 

@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
 import { HeadSidebar, NotifBadge, OptionChatComp, SearchComp } from '../components'
 import { faSearch, faBars, faArrowLeftLong, faPaperclip, faAngleDown, faMessage } from '@fortawesome/free-solid-svg-icons';
-import { profileData } from '../assets/index';
+import { AllChat, profileData } from '../assets/index';
 import { NavLink } from 'react-router-dom';
 
 
@@ -16,6 +16,12 @@ const SideBarComp = () => {
 
     const onClickPinChat = () => {
         setPinChat(!pinChat)
+    }
+
+
+    const handleClickRight = (e) => {
+
+        alert('heelo')
     }
 
 
@@ -35,7 +41,7 @@ const SideBarComp = () => {
                         {
 
                             profileData.map((item, i) => (
-                                <NavLink to={`/${item.id}`} className={`mx-6 px-3 py-2 rounded-lg flex items-center justify-between `} activeClassName='active' key={i}>
+                                <NavLink to={`/${item.id}`} className={`mx-6 px-3 py-2 rounded-lg flex items-center justify-between border-b border-transparent hover:border-b-gray-300`} activeClassName='active' key={i}>
                                     <div className="flex items-center">
                                         <div className='relative'>
                                             <div className='h-10 w-10' >
@@ -78,8 +84,8 @@ const SideBarComp = () => {
 
                         {
 
-                            profileData.map((item, i) => (
-                                <NavLink to={`/${item.id}`} className={`mx-6 px-3 py-2 rounded-lg flex items-center justify-between `} activeClassName='active' key={i}>
+                            AllChat.map((item, i) => (
+                                <NavLink to={`/${item.id}`} className={`mx-6 px-3 py-2 rounded-lg flex items-center justify-between border-b border-transparent hover:border-b-gray-300`} activeClassName='active' key={i} onContextMenu={handleClickRight} >
                                     <div className="flex items-center">
                                         <div className='relative'>
                                             <div className='h-10 w-10' >
