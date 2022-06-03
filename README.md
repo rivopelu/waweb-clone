@@ -1,5 +1,10 @@
 # Chat App Front end design
 
+<div >
+<a href='https://reactjs.org/' target="_blank"><img alt='react' src='https://img.shields.io/badge/ReactJs_V 18.10-100000?style=plastic&logo=react&logoColor=white&labelColor=black&color=1A6BF7'/></a>
+<a href='https://vercel.com/' target="_blank"><img alt='vercel' src='https://img.shields.io/badge/Vercel-100000?style=plastic&logo=vercel&logoColor=white&labelColor=black&color=1A6BF7'/></a>
+</div>
+
 ## [See Demo App ](https://chat-app-nine-opal.vercel.app/)
 
 ![ScreenShot](https://media-exp2.licdn.com/dms/image/C4D22AQGbcStl-NLf_g/feedshare-shrink_2048_1536/0/1654287466843?e=1657152000&v=beta&t=j01W3c-lXr7r0uao5aYi6v8flCDwvKDHBlCPmNZlZ5g)
@@ -27,4 +32,10 @@
 "react-scripts": "5.0.1",
 "web-vitals": "^2.1.4"
 },
+
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24"
+  }
 ```
