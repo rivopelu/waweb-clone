@@ -77,7 +77,7 @@ const SideBarComp = () => {
 
                     </div>
                     <div className='pt-5'></div>
-                    <OptionChatComp title={'pinned chat'} className={`bg-violet-500 `} rotate={allChat && 'rotate-180 flex pr-2  '} icon={faMessage} onClick={() => setAllChat(!allChat)} />
+                    <OptionChatComp title={'All chat'} className={`bg-violet-500 `} rotate={allChat && 'rotate-180 flex pr-2  '} icon={faMessage} onClick={() => setAllChat(!allChat)} />
 
                     <div className={`chatList flex flex-col gap-1 mt-2 ${allChat ? 'hidden' : ''} duration-200`}>
 

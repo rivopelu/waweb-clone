@@ -1,4 +1,4 @@
 import HeadSidebar from "./HeadSidebar"
+import ChatMainComp from "./ChatMainComp"
 
-
-export { HeadSidebar }
+export { HeadSidebar, ChatMainComp }
