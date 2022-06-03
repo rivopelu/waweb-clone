@@ -1,24 +1,119 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
-import { HeadSidebar, OptionChatComp, SearchComp } from '../components'
-import { faSearch, faBars, faArrowLeftLong, faPaperclip, faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { HeadSidebar, NotifBadge, OptionChatComp, SearchComp } from '../components'
+import { faSearch, faBars, faArrowLeftLong, faPaperclip, faAngleDown, faMessage } from '@fortawesome/free-solid-svg-icons';
+import { profileData } from '../assets/index';
+import { NavLink } from 'react-router-dom';
+
 
 
 
 const SideBarComp = () => {
 
+    const [pinChat, setPinChat] = useState(false);
+    const [allChat, setAllChat] = useState(false);
+
+
+    const onClickPinChat = () => {
+        setPinChat(!pinChat)
+    }
 
 
     return (
-        <div className='w-full border-r border-gray-200 '>
+        <div className='w-full  border-r border-gray-200 absolute h-screen  '>
             <HeadSidebar />
 
-            <div className="bawah px-6">
+            <div className="bawah  h-[90%] 2xl:h-[94%] flex flex-col">
                 <SearchComp />
 
-                <div className='Chat overflow-y-scroll '>
-                    <OptionChatComp />
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit culpa libero error, officia quo cumque praesentium, quae sit maiores sequi temporibus blanditiis ex possimus amet consequuntur ratione! Itaque sunt dicta accusantium, officiis fuga eos suscipit tempora ducimus minima reiciendis placeat ab? Hic consequatur assumenda nesciunt illum perspiciatis quod, dolor inventore suscipit. Dicta cumque dolorum accusantium repudiandae cupiditate. Quo doloremque voluptas quod vero, quis autem, fuga accusantium dicta recusandae officiis minus sapiente voluptates labore, non cumque at alias aliquid! Quae veritatis itaque vero nisi inventore, magnam aperiam ullam rem, earum vitae culpa autem quibusdam. Cupiditate magni facere vitae, alias optio veniam tempora sunt debitis sapiente quam repellat non natus harum doloremque aliquid expedita hic quibusdam laboriosam modi numquam rerum placeat deleniti! Eos consectetur blanditiis culpa dolores aspernatur recusandae, reiciendis, qui ut soluta iusto ullam! Debitis dignissimos a aperiam, blanditiis sint sit quo amet molestias, nihil exercitationem modi ipsam explicabo, neque itaque accusamus incidunt velit perferendis corporis! Distinctio inventore ducimus rem illo neque autem cum consequuntur exercitationem architecto debitis quod sed ipsam itaque rerum, aperiam praesentium quam esse unde ab beatae hic doloribus est laborum quidem? Voluptatem quas dolores commodi veritatis officia saepe voluptatum quos fuga facilis quod dolor, illo iusto iste soluta inventore reiciendis? Maiores quo aperiam esse a autem dolorum iure repellendus iusto eaque sit. Voluptatum odio exercitationem labore distinctio dolorem modi in cumque consequuntur illo eligendi inventore corrupti odit, repellat dicta reprehenderit aperiam, dolor ducimus laudantium molestiae quaerat ut fuga! Exercitationem harum asperiores quod cum. Odit cum fugit praesentium quos libero explicabo quo dolorem. Ex iste culpa, quidem amet asperiores non, voluptate sapiente veniam maxime laboriosam quod? Inventore excepturi, ratione similique quam alias quae nesciunt, porro quibusdam minima dicta, esse animi? Laboriosam distinctio quae dolore delectus eaque ducimus sed suscipit eligendi minima tenetur, et, reprehenderit provident eius in fugiat autem repudiandae ipsam accusamus optio qui. Temporibus quam laborum sed nihil, nobis vero veniam assumenda, officiis ducimus, animi quis. Modi totam odio, ipsa ipsum iure ullam nihil earum porro deserunt tempora dolorum impedit labore dolorem corporis adipisci animi hic ab dolore nulla facilis accusamus, provident nobis architecto? Voluptatum quia reiciendis doloribus modi? Officiis, ratione alias odio, aspernatur consequatur sunt adipisci obcaecati rerum aut, culpa possimus. Aliquid accusamus eligendi voluptates enim harum molestias exercitationem totam velit vero repellat illo nulla corrupti dicta repellendus nobis error molestiae reiciendis doloremque officia, quasi inventore sit illum. Modi ex maxime optio? Cumque aut dolorum aperiam nobis voluptatibus iusto ratione. Commodi doloremque officiis consequuntur cum natus placeat ipsa ex eaque nihil quasi ipsam alias praesentium, quia harum consequatur recusandae exercitationem amet quisquam! Mollitia soluta voluptatem voluptate? Quo laboriosam laudantium, ipsum nihil expedita quasi itaque earum maiores neque, labore, minus nostrum ullam? Quibusdam, doloribus asperiores? Quasi numquam blanditiis vitae suscipit voluptas itaque sed ratione deserunt porro culpa, facere nostrum vel, natus exercitationem in similique provident totam consequatur ipsam delectus repellat recusandae est dolor molestiae? Quia delectus minus rem perferendis, maxime ipsam fuga et adipisci distinctio est! Totam quas iusto cum sapiente quae provident, deserunt minima, dolorum quam dolore necessitatibus, delectus ullam illo doloremque dolor sunt et expedita quasi doloribus adipisci sit molestias veniam error quibusdam? Ullam deserunt omnis magni doloribus, distinctio quod dolores voluptate, eum ipsam voluptatibus at voluptatem iure ea, sunt maiores totam consequatur quos! Maiores sit ut quidem! Ipsum laborum id maxime quibusdam incidunt dolor vel quidem provident minima, eveniet odio excepturi nisi. Quae provident ab dolorem quasi architecto qui explicabo in. Perspiciatis repudiandae at numquam nemo tenetur fuga quod tempore quibusdam soluta pariatur facere nihil aliquid iure a iusto, provident non vero reprehenderit veritatis sint corrupti reiciendis dolor delectus! Modi officia accusamus dicta illum rerum placeat eaque, veniam tenetur. Vel quasi minima vitae quae est id fuga illo dolorum ratione aspernatur? Unde repellat error cupiditate reiciendis aspernatur delectus quisquam. Minus molestias voluptatem accusamus suscipit consequatur totam quasi. Consequuntur veritatis beatae maiores eos, illum in corporis et libero dolore velit? Quis, itaque esse accusamus animi distinctio ducimus deleniti dolorem magnam, dignissimos maxime cupiditate provident ut a culpa. Eveniet sed porro accusantium. Quia accusantium ad reiciendis excepturi possimus. Ad inventore quo aliquid quaerat saepe libero aperiam facilis? Repellendus dolor eum autem reprehenderit vero quo repudiandae! Maiores porro pariatur accusamus libero laudantium soluta iusto suscipit hic sit.
+                <div className=' h-full flex flex-col overflow-y-scroll'>
+                    <OptionChatComp rotate={pinChat && 'rotate-180 flex pr-2  '} title={'pinned chat'} className='bg-orange-500' icon={faPaperclip} onClick={onClickPinChat} />
+
+                    <div className={`chatList flex flex-col gap-1 mt-2 ${pinChat ? 'hidden' : ''} duration-200`}>
+
+
+                        {
+
+                            profileData.map((item, i) => (
+                                <NavLink to={`/${item.id}`} className={`mx-6 px-3 py-2 rounded-lg flex items-center justify-between `} activeClassName='active' key={i}>
+                                    <div className="flex items-center">
+                                        <div className='relative'>
+                                            <div className='h-10 w-10' >
+                                                <img src={item.avatar} className='rounded-full' alt={item.name} />
+                                            </div>
+                                            {
+                                                item.active &&
+
+                                                <NotifBadge className={'bg-green-500 right-0 bottom-[2px]'} />
+                                            }
+
+                                        </div>
+                                        <div className="pl-2">
+                                            <div className='h-5 font-bold'>{item.name}</div>
+                                            <div className='chat-terbaru w-full h-5  overflow-hidden'>{item.chatTerbaru}</div>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex flex-col items-center relative">
+                                        <p className='text-xs text-right'>19:00</p>
+                                        <div>
+                                            {
+                                                item.notif && (
+
+                                                    <NotifBadge title={item.notif} className='flex mt-1' />
+                                                )
+                                            }
+                                        </div>
+                                    </div>
+                                </NavLink>
+                            ))
+                        }
+
+                    </div>
+                    <div className='pt-5'></div>
+                    <OptionChatComp title={'pinned chat'} className={`bg-violet-500 `} rotate={allChat && 'rotate-180 flex pr-2  '} icon={faMessage} onClick={() => setAllChat(!allChat)} />
+
+                    <div className={`chatList flex flex-col gap-1 mt-2 ${allChat ? 'hidden' : ''} duration-200`}>
+
+
+                        {
+
+                            profileData.map((item, i) => (
+                                <NavLink to={`/${item.id}`} className={`mx-6 px-3 py-2 rounded-lg flex items-center justify-between `} activeClassName='active' key={i}>
+                                    <div className="flex items-center">
+                                        <div className='relative'>
+                                            <div className='h-10 w-10' >
+                                                <img src={item.avatar} className='rounded-full' alt={item.name} />
+                                            </div>
+                                            {
+                                                item.active &&
+
+                                                <NotifBadge className={'bg-green-500 right-0 bottom-[2px]'} />
+                                            }
+
+                                        </div>
+                                        <div className="pl-2">
+                                            <div className='h-5 font-bold'>{item.name}</div>
+                                            <div className='chat-terbaru w-full h-5  overflow-hidden'>{item.chatTerbaru}</div>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex flex-col items-center relative">
+                                        <p className='text-xs text-right'>19:00</p>
+                                        <div>
+                                            {
+                                                item.notif && (
+
+                                                    <NotifBadge title={item.notif} className='flex mt-1' />
+                                                )
+                                            }
+                                        </div>
+                                    </div>
+                                </NavLink>
+                            ))
+                        }
+
+                    </div>
                 </div>
             </div>
         </div>

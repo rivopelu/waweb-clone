@@ -31,6 +31,7 @@ const HeadSidebar = () => {
                 </div>
                 <div className='relative cursor-pointer hover:bg-gray-500 text-gray-600 duration-100 hover:text-white h-7 p-2 rounded-full w-7  bg-gray-200 flex items-center justify-center'>
                     <FontAwesomeIcon icon={faSpinner} className=' ' />
+
                     <NotifBadge title={'6'} className={'absolute right-0 bottom-1'} />
                 </div>
             </div>

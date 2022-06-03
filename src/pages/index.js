@@ -1,3 +1,3 @@
 import SideBarComp from "./SideBarComp";
-
-export { SideBarComp }
+import MainChat from "./MainChat";
+export { SideBarComp, MainChat }

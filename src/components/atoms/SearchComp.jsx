@@ -10,7 +10,7 @@ const SearchComp = () => {
         setInputFocus(true)
     }
     return (
-        <div className="search  py-3 relative flex items-center  ">
+        <div className="search  py-3 px-6 relative flex items-center  ">
             {
                 inputFocus ? (
 
@@ -21,7 +21,7 @@ const SearchComp = () => {
                 )
             }
             <input onFocus={onFocusInput} type="text" placeholder='Cari Chating' className="border px-10  w-full rounded-md focus:outline-none focus:border-gray-400 text-sm py-1 flex items-center bg-gray-100" />
-            <FontAwesomeIcon icon={faBars} className={`cursor-pointer absolute pr-3 right-0 text-gray-600 duration-300 ${!inputFocus && 'scale-0'}`} />
+            <FontAwesomeIcon icon={faBars} className={`cursor-pointer absolute pr-10 right-0 text-gray-600 duration-300 ${!inputFocus && 'scale-0'}`} />
         </div>
     )
 }

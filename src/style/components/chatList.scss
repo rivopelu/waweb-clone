@@ -1,0 +1,14 @@
+.chatList {
+    .chat-terbaru {
+        color: rgb(145, 142, 142);
+    }
+
+    .active {
+        background-color: rgb(63, 109, 209);
+        color: white;
+
+        .chat-terbaru {
+            color: white;
+        }
+    }
+}

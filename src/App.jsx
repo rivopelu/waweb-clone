@@ -1,5 +1,5 @@
 import React from 'react'
-import { SideBarComp } from './pages'
+import { MainChat, SideBarComp } from './pages'
 
 
 const App = () => {
@@ -7,10 +7,13 @@ const App = () => {
 
 
         <div className='flex min-h-screen w-full max-w-[1280px]  bg-white fixed'>
-            <div className="kiri  w-[40%]">
+            <div className="kiri  w-[40%]  relative">
                 <SideBarComp />
             </div>
-            <div className="kama">kanan</div>
+            <div className="kama">
+
+                <MainChat />
+            </div>
         </div>
 
     )

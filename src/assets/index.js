@@ -27,26 +27,37 @@ import profile22 from './profilPicture/22.png'
 export const profileData = [
 
 
-    { id: 1, name: "Jhon Doe Maxim", chatTerbaru: 'lorem', status: 'lorem ipsum dolor sit', avatar: profile1 },
-    { id: 2, name: "Jhon Doe Maxim", chatTerbaru: 'lorem', status: 'lorem ipsum dolor sit', avatar: profile2 },
-    { id: 3, name: "Jhon Doe Maxim", chatTerbaru: 'lorem', status: 'lorem ipsum dolor sit', avatar: profile3 },
-    { id: 4, name: "Jhon Doe Maxim", chatTerbaru: 'lorem', status: 'lorem ipsum dolor sit', avatar: profile4 },
-    { id: 4, name: "Jhon Doe Maxim", chatTerbaru: 'lorem', status: 'lorem ipsum dolor sit', avatar: profile4 },
-    { id: 4, name: "Jhon Doe Maxim", chatTerbaru: 'lorem', status: 'lorem ipsum dolor sit', avatar: profile4 },
-    { id: 4, name: "Jhon Doe Maxim", chatTerbaru: 'lorem', status: 'lorem ipsum dolor sit', avatar: profile4 },
-    { id: 4, name: "Jhon Doe Maxim", chatTerbaru: 'lorem', status: 'lorem ipsum dolor sit', avatar: profile4 },
-    { id: 4, name: "Jhon Doe Maxim", chatTerbaru: 'lorem', status: 'lorem ipsum dolor sit', avatar: profile4 },
-    { id: 4, name: "Jhon Doe Maxim", chatTerbaru: 'lorem', status: 'lorem ipsum dolor sit', avatar: profile4 },
-    { id: 4, name: "Jhon Doe Maxim", chatTerbaru: 'lorem', status: 'lorem ipsum dolor sit', avatar: profile4 },
-    { id: 4, name: "Jhon Doe Maxim", chatTerbaru: 'lorem', status: 'lorem ipsum dolor sit', avatar: profile4 },
-    { id: 4, name: "Jhon Doe Maxim", chatTerbaru: 'lorem', status: 'lorem ipsum dolor sit', avatar: profile4 },
-    { id: 4, name: "Jhon Doe Maxim", chatTerbaru: 'lorem', status: 'lorem ipsum dolor sit', avatar: profile4 },
-    { id: 4, name: "Jhon Doe Maxim", chatTerbaru: 'lorem', status: 'lorem ipsum dolor sit', avatar: profile4 },
-    { id: 4, name: "Jhon Doe Maxim", chatTerbaru: 'lorem', status: 'lorem ipsum dolor sit', avatar: profile4 },
-    { id: 4, name: "Jhon Doe Maxim", chatTerbaru: 'lorem', status: 'lorem ipsum dolor sit', avatar: profile4 },
-    { id: 4, name: "Jhon Doe Maxim", chatTerbaru: 'lorem', status: 'lorem ipsum dolor sit', avatar: profile4 },
-    { id: 4, name: "Jhon Doe Maxim", chatTerbaru: 'lorem', status: 'lorem ipsum dolor sit', avatar: profile4 },
-    { id: 4, name: "Jhon Doe Maxim", chatTerbaru: 'lorem', status: 'lorem ipsum dolor sit', avatar: profile4 },
-    { id: 4, name: "Jhon Doe Maxim", chatTerbaru: 'lorem', status: 'lorem ipsum dolor sit', avatar: profile4 },
-    { id: 4, name: "Jhon Doe Maxim", chatTerbaru: 'lorem', status: 'lorem ipsum dolor sit', avatar: profile4 },
+    {
+        id: 1, name: "Jhon Doe Maxim",
+        chatTerbaru: 'lorem ipsum semakin menjadi dan semakain semakin lagi kami menjadi yang terbaik bagi diri ini dan semuanya',
+        status: 'lorem ipsum dolor sit',
+        avatar: profile1,
+        notif: 3,
+        active: true
+    },
+    {
+        id: 2, name: "Nia tumbelaka",
+        chatTerbaru: 'lorem ipsum semakin menjadi dan semakain semakin lagi kami menjadi yang terbaik bagi diri ini dan semuanya',
+        status: 'lorem ipsum dolor sit',
+        avatar: profile2,
+        notif: 1,
+        active: true
+    },
+    {
+        id: 3, name: "Rivo Pelu",
+        chatTerbaru: 'lorem ipsum semakin menjadi dan semakain semakin lagi kami menjadi yang terbaik bagi diri ini dan semuanya',
+        status: 'lorem ipsum dolor sit',
+        avatar: profile3,
+
+        active: false
+    },
+    {
+        id: 4, name: "Valdo main",
+        chatTerbaru: 'lorem ipsum semakin menjadi dan semakain semakin lagi kami menjadi yang terbaik bagi diri ini dan semuanya',
+        status: 'lorem ipsum dolor sit',
+        avatar: profile4,
+        notif: 10,
+        active: false
+    },
+
 ]
